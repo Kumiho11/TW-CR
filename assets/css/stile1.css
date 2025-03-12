@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    background: linear-gradient(to bottom, white, grey);
+}
+
+nav {
+    background: #222;
+    padding: 10px 0;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+h2 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    filter: brightness(1.1) contrast(1.2); /* Clarificare a imaginii */
+}
+
+h2, p {
+    margin: 20px 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.echipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.echipa {
+    width: 45%; /* Dimensiune mai mică pentru boxuri */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.echipa img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.echipa p {
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .echipe-container {
+        justify-content: center;
+    }
+
+    .echipa {
+        width: 100%; /* Pe dispozitive mici, fiecare box ocupă 100% din lățime */
+    }
+}
