@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Principală - CS2</title>
     <link rel="stylesheet" href="C:\Users\gabri\OneDrive\Desktop\site\assets\css\stile.css">
+    <script src="C:\Users\gabri\OneDrive\Desktop\site\assets\javascript\info-box.js" defer></script> <!-- Adăugăm scriptul de info box -->
 </head>
 <body>
     <nav>
@@ -23,34 +24,19 @@
             <h2>Cei mai buni jucători ai momentului</h2>
             <ul>
                 <li class="jucator">
-                    <img src="assets/img/s1mple.jpg" alt="s1mple">
-                    <div>
-                        <strong>s1mple (Oleksandr "s1mple" Kostyliev):</strong> Considerat unul dintre cei mai buni jucători din istoria CS:GO, s1mple a câștigat multiple turnee internaționale.
-                    </div>
+                    <img src="assets/img/s1mple.jpg" alt="s1mple" onclick="afiseazaInfo('info-s1mple')">
                 </li>
                 <li class="jucator">
-                    <img src="assets/img/zywoo.jpg" alt="zywoo">
-                    <div>
-                        <strong>zywoo (Mathieu "ZywOo" Herbaut):</strong> ZywOo este un jucător de top din Franța, cunoscut pentru abilitatea sa incredibilă de a domina meciurile.
-                    </div>
+                    <img src="assets/img/zywoo.jpg" alt="zywoo" onclick="afiseazaInfo('info-zywoo')">
                 </li>
                 <li class="jucator">
-                    <img src="assets/img/monesy.jpg" alt="monesy">
-                    <div>
-                        <strong>monesy (Ilya "m0NESY" Osipov):</strong> Un tânăr talent din Rusia, m0NESY a atras atenția mondială datorită abilității sale impresionante de a juca cu AWP.
-                    </div>
+                    <img src="assets/img/monesy.jpg" alt="monesy" onclick="afiseazaInfo('info-monesy')">
                 </li>
                 <li class="jucator">
-                    <img src="assets/img/donk.jpg" alt="donk">
-                    <div>
-                        <strong>donk (Danil "donk" Kryshkovets):</strong> Donk este un jucător de CS:GO din Kazahstan care a câștigat rapid notorietate datorită performanțelor sale.
-                    </div>
+                    <img src="assets/img/donk.jpg" alt="donk" onclick="afiseazaInfo('info-donk')">
                 </li>
                 <li class="jucator">
-                    <img src="assets/img/sh1ro.jpg" alt="sh1ro">
-                    <div>
-                        <strong>sh1ro (Dmitry "sh1ro" Sokolov):</strong> sh1ro este un jucător din Rusia, membru al echipei Cloud9, recunoscut pentru precizia sa.
-                    </div>
+                    <img src="assets/img/sh1ro.jpg" alt="sh1ro" onclick="afiseazaInfo('info-sh1ro')">
                 </li>
             </ul>
         </section>
@@ -79,5 +65,7 @@
         </section>
     </div>
 
+    <!-- Box-ul de info care va fi populat din JS -->
+    <div id="info-box" class="info-box"></div>
 </body>
 </html>

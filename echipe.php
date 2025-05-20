@@ -1,0 +1,179 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echipe CS2</title>
+    <link rel="stylesheet" href="css/stile1.css">
+    <script src="javascript/flip.js" defer></script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="index.php">Pagina Principală</a></li>
+        <li><a href="echipe.php">Echipe</a></li>
+        <li><a href="update.php">Update-uri</a></li>
+        <li><a href="turnee.php">Turnee</a></li>
+        <?php if (isset($_SESSION['user'])): ?>
+            <li><a href="auth/logout.php">Ieșire</a></li>
+        <?php else: ?>
+            <li><a href="login_page.php">Logare</a></li>
+            <li><a href="register_page.php">Înregistrare</a></li>
+        <?php endif; ?>
+    </ul>
+</nav>
+
+<h1>Top 10 Echipe CS2</h1>
+
+<div class="echipe-container">
+    <div class="echipa">
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="assets/img/teamspirirt.jpg" alt="Team Spirit">
+                </div>
+                <div class="flip-card-back">
+                    <h2><a href="https://www.hltv.org/team/7020/spirit" target="_blank">1. Team Spirit</a></h2>
+                    <p>O echipă de top din Federația Rusă, cunoscută pentru jucătorii săi excepționali.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="echipa">
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="assets/img/vitality.jpg" alt="Team Vitality">
+                </div>
+                <div class="flip-card-back">
+                    <h2><a href="https://www.hltv.org/team/9565/vitality" target="_blank">2. Team Vitality</a></h2>
+                    <p>O echipă franceză de elită, recunoscută pentru performanțele remarcabile în competiții
+                        internaționale.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="echipe-container">
+    <div class="echipa">
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="assets/img/g2.jpg" alt="G2 Esports">
+                </div>
+                <div class="flip-card-back">
+                    <h2><a href="https://www.hltv.org/team/5995/g2" target="_blank">3. G2 Esports</a></h2>
+                    <p>O echipă germană cu jucători talentați, având o prezență puternică în scena CS2.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="echipa">
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="assets/img/faze.jpg" alt="FaZe Clan">
+                </div>
+                <div class="flip-card-back">
+                    <h2><a href="https://www.hltv.org/team/6667/faze" target="_blank">4. FaZe Clan</a></h2>
+                    <p>O echipă internațională renumită pentru stilul de joc agresiv și strategiile inovatoare.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="echipe-container">
+    <div class="echipa">
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="assets/img/navi.jpg" alt="Natus Vincere">
+                </div>
+                <div class="flip-card-back">
+                    <h2><a href="https://www.hltv.org/team/4608/natus-vincere" target="_blank">5. Natus Vincere
+                        (Na'Vi)</a></h2>
+                    <p>O echipă legendară din regiunea CIS, având în componență unii dintre cei mai buni jucători.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="echipa">
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="assets/img/mouz.jpg" alt="MOUZ">
+                </div>
+                <div class="flip-card-back">
+                    <h2><a href="https://www.hltv.org/team/4494/mouz" target="_blank">6. MOUZ</a></h2>
+                    <p>O echipă europeană care a demonstrat performanțe constante în turneele majore.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="echipe-container">
+    <div class="echipa">
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="assets/img/eternal.jpg" alt="Eternal Fire">
+                </div>
+                <div class="flip-card-back">
+                    <h2><a href="https://www.hltv.org/team/11210/eternal-fire" target="_blank">7. Eternal Fire</a></h2>
+                    <p>O echipă turcă ce a surprins prin evoluții impresionante în competițiile recente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="echipa">
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="assets/img/mongolz.jpg" alt="TheMongolz">
+                </div>
+                <div class="flip-card-back">
+                    <h2><a href="https://www.hltv.org/team/11036/the-mongolz" target="_blank">8. TheMongolz</a></h2>
+                    <p>O echipă din Mongolia, recunoscută pentru ascensiunea rapidă în clasamentele mondiale.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="echipe-container">
+    <div class="echipa">
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="assets/img/saw.jpg" alt="SAW">
+                </div>
+                <div class="flip-card-back">
+                    <h2><a href="https://www.hltv.org/team/10399/saw" target="_blank">9. SAW</a></h2>
+                    <p>O echipă portugheză care a demonstrat performanțe solide împotriva echipelor de top.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="echipa">
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="assets/img/heroic.jpg" alt="Heroic">
+                </div>
+                <div class="flip-card-back">
+                    <h2><a href="https://www.hltv.org/team/7175/heroic" target="_blank">10. Heroic</a></h2>
+                    <p>O echipă daneză cu o istorie bogată în scena competitivă de CS2.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

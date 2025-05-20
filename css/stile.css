@@ -41,12 +41,12 @@ h2 {
 
 .container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin: 20px;
 }
 
 .jucatori, .evenimente {
-    width: 45%; 
+    width: 45%;
 }
 
 .jucatori ul {
@@ -89,15 +89,15 @@ h2 {
 }
 
 .poze-evenimente img {
-    width: 23%; 
-    height: 150px; 
-    object-fit: cover; 
-    border-radius: 50%; 
-    transition: transform 0.3s ease; 
+    width: 23%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
 }
 
 .poze-evenimente img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 /* Info Box */
@@ -116,4 +116,74 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     font-size: 16px;
     transition: display 0.3s ease;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+form p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+form p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+form p a:hover {
+    text-decoration: underline;
+}
+
+#message {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#message .success {
+    color: #3bd55e;
+    font-weight: bold;
+}
+
+#message .error {
+    color: #dc3545;
+    font-weight: bold;
 }

@@ -1,0 +1,56 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnee CS2 2025</title>
+    <link rel="stylesheet" href="css/stile2.css">
+
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="index.php">Pagina Principală</a></li>
+        <li><a href="echipe.php">Echipe</a></li>
+        <li><a href="update.php">Update-uri</a></li>
+        <li><a href="turnee.php">Turnee</a></li>
+        <?php if (isset($_SESSION['user'])): ?>
+            <li><a href="auth/logout.php">Ieșire</a></li>
+        <?php else: ?>
+            <li><a href="login_page.php">Logare</a></li>
+            <li><a href="register_page.php">Înregistrare</a></li>
+        <?php endif; ?>
+    </ul>
+</nav>
+
+<h1>Turnee CS2 Programate pentru 2025</h1>
+
+<h2>🔹 IEM Katowice 2025</h2>
+<p>- Data: 5 - 16 februarie 2025</p>
+<p>- Locație: Katowice, Polonia</p>
+<p>- Premiu total: $1,000,000</p>
+
+<h2>🔹 PGL Major 2025</h2>
+<p>- Data: 10 - 24 mai 2025</p>
+<p>- Locație: Copenhaga, Danemarca</p>
+<p>- Premiu total: $1,250,000</p>
+
+<h2>🔹 BLAST Premier: Spring Final 2025</h2>
+<p>- Data: 10 - 16 iunie 2025</p>
+<p>- Locație: Lisabona, Portugalia</p>
+<p>- Premiu total: $425,000</p>
+
+<h2>🔹 ESL Pro League Season 20</h2>
+<p>- Data: 2 septembrie - 13 octombrie 2025</p>
+<p>- Locație: Malta</p>
+<p>- Premiu total: $850,000</p>
+
+<h2>🔹 BLAST Premier: World Final 2025</h2>
+<p>- Data: 10 - 15 decembrie 2025</p>
+<p>- Locație: Abu Dhabi, EAU</p>
+<p>- Premiu total: $1,000,000</p>
+</body>
+</html>
